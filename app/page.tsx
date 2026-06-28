@@ -64,7 +64,7 @@ function Frame({
   id: string;
   ar: string;
   ph: string;
-  label: string;
+  label?: string;
   labelColor?: string;
   body?: string;
   pill?: string;
@@ -90,12 +90,16 @@ function Frame({
           {bubble}
         </div>
       )}
-      <div className="cap">
-        <div className="lbl" style={{ color: labelColor }}>
-          {label}
+      {(label || body) && (
+        <div className="cap">
+          {label && (
+            <div className="lbl" style={{ color: labelColor }}>
+              {label}
+            </div>
+          )}
+          {body && <p className="bd">{body}</p>}
         </div>
-        {body && <p className="bd">{body}</p>}
-      </div>
+      )}
     </div>
   );
 }
@@ -180,7 +184,7 @@ export default function Page() {
         <Section eyebrow="01 · Beginning" title="The Invitation" tag="His World" tagColor={BLUE} dot={BLUEDOT} />
         <div className="content">
           <Frame id="rs_b1_venue" ar="16/9" ph="Empty venue, Wale alone on stage" label="01 · Soundcheck For No One" labelColor={BLUE} body="Wale alone on stage in a bare, empty room, running the song to no one. House lights up." />
-          <Frame id="rs_chair" ar="16/9" ph="A single chair with a 'RESERVED' sign on the seat" label="02 · The Reserved Sign" labelColor={BLUE} body={'One detail shot — a single chair near the stage, a "RESERVED" card propped on the seat.'} />
+          <Frame id="rs_chair" ar="16/9" ph="A single chair with a 'RESERVED' sign on the seat" />
           <Frame id="rs_b2_gesture" ar="16/9" ph="Wale on stage, phone in hand" label="03 · He Sends The Invite" labelColor={BLUE} body="He stops between runs, pulls his phone, and sends the text." bubble="tonight's the show. you should be here 🤍" />
         </div>
         <Foot page="04 / 10" />
