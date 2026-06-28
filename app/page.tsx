@@ -72,7 +72,7 @@ function Frame({
   pillDot?: string;
   bubble?: string;
 }) {
-  const src = id === "rs_b1_venue" ? "/gifs/rs_b1_venue.webp" : `/gifs/${id}.gif`;
+  const src = id === "rs_b1_venue" ? "/gifs/rs_b1_venue.png" : `/gifs/${id}.gif`;
   return (
     <div className="frame" style={{ aspectRatio: ar }}>
       <ImageSlot id={id} placeholder={ph} src={src} />

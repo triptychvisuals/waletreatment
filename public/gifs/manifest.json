@@ -1,6 +1,6 @@
 {
   "project": "Wale — Overthink · Music Video Treatment",
-  "note": "Each slot id maps to one file in this folder. Drop the matching files here (public/gifs/). The app auto-loads /gifs/<id>.gif for every slot (rs_b1_venue is .webp). Users can still drag-drop to override; overrides save to localStorage.",
+  "note": "Each slot id maps to one file in this folder. Drop the matching files here (public/gifs/). The app auto-loads /gifs/<id>.gif for every slot (rs_b1_venue is .png). Users can still drag-drop to override; overrides save to localStorage.",
   "slots": [
     { "id": "rs_cover_hero", "file": "rs_cover_hero.gif", "slide": "01 Cover", "caption": "The Empty Venue" },
     { "id": "rs_cover_key2", "file": "rs_cover_key2.gif", "slide": "01 Cover", "caption": "His Soundcheck" },
@@ -13,7 +13,7 @@
     { "id": "rs_perf_2", "file": "rs_perf_2.gif", "slide": "03 Performance · Soundcheck", "caption": "Close — Mic In Hand" },
     { "id": "rs_perf_3", "file": "rs_perf_3.gif", "slide": "03 Performance · Soundcheck", "caption": "Low Angle — Silhouette" },
     { "id": "rs_perf_4", "file": "rs_perf_4.gif", "slide": "03 Performance · Soundcheck", "caption": "Behind Him — Empty Room" },
-    { "id": "rs_b1_venue", "file": "rs_b1_venue.webp", "slide": "04 The Invitation", "caption": "01 · Soundcheck For No One" },
+    { "id": "rs_b1_venue", "file": "rs_b1_venue.png", "slide": "04 The Invitation", "caption": "01 · Soundcheck For No One" },
     { "id": "rs_chair", "file": "rs_chair.gif", "slide": "04 The Invitation", "caption": "02 · The Reserved Sign" },
     { "id": "rs_b2_gesture", "file": "rs_b2_gesture.gif", "slide": "04 The Invitation", "caption": "03 · He Sends The Invite" },
     { "id": "rs_b4_apartment", "file": "rs_b4_apartment.gif", "slide": "05 Cut To Her", "caption": "04 · The Apartment" },
