@@ -1,0 +1,141 @@
+* { box-sizing: border-box; -webkit-font-smoothing: antialiased; }
+html, body { margin: 0; padding: 0; background: #050505; }
+body { font-family: "Archivo", system-ui, sans-serif; }
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  padding: 28px 16px 80px;
+  min-height: 100vh;
+}
+.intro-bar {
+  width: 100%;
+  max-width: 520px;
+  color: #8c8c8c;
+  font-family: "Space Mono", monospace;
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.intro-bar b { color: #e8e8e8; font-weight: 400; }
+
+/* ── Slide shell (9:16, container-scaled type) ───────────────────────────── */
+.slide {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  aspect-ratio: 9 / 16;
+  background: #000;
+  color: #fff;
+  container-type: inline-size;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 5.5cqw 5.9cqw 4.8cqw;
+  border-radius: 6px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+.mono { font-family: "Space Mono", monospace; }
+
+.chrome {
+  display: flex; justify-content: space-between; align-items: center;
+  border-bottom: 1px solid rgba(255,255,255,0.14);
+  padding-bottom: 1.7cqw; flex-shrink: 0;
+}
+.chrome span {
+  font-family: "Space Mono", monospace; font-size: 2.0cqw;
+  letter-spacing: 0.24em; text-transform: uppercase; color: #8c8c8c;
+}
+
+.srow { display: flex; justify-content: space-between; align-items: flex-end; padding-top: 1.7cqw; flex-shrink: 0; }
+.srow .left { display: flex; align-items: baseline; gap: 2.2cqw; }
+.eyebrow { font-family: "Space Mono", monospace; font-size: 2.0cqw; letter-spacing: 0.28em; text-transform: uppercase; color: #bdbdbd; white-space: nowrap; }
+.h2 { font-size: 5.0cqw; font-weight: 800; letter-spacing: -0.02em; text-transform: uppercase; line-height: 1; margin: 0; white-space: nowrap; }
+.tag { display: flex; align-items: center; gap: 0.9cqw; font-family: "Space Mono", monospace; font-size: 1.85cqw; letter-spacing: 0.2em; text-transform: uppercase; white-space: nowrap; }
+.dot { width: 0.9cqw; height: 0.9cqw; border-radius: 50%; flex-shrink: 0; }
+
+.lead { flex-shrink: 0; padding-top: 2.6cqw; padding-bottom: 2.2cqw; }
+.lead-eyebrow { font-family: "Space Mono", monospace; font-size: 2.0cqw; letter-spacing: 0.3em; text-transform: uppercase; color: #bdbdbd; margin-bottom: 1.6cqw; }
+.lead-head { font-size: 5.4cqw; font-weight: 800; letter-spacing: -0.02em; line-height: 1.02; margin: 0; text-wrap: balance; }
+.lead-intro { font-size: 2.5cqw; font-weight: 300; line-height: 1.45; color: #c4c4c4; margin: 0; }
+
+.content { flex: 1; display: flex; flex-direction: column; gap: 1.4cqw; justify-content: center; min-height: 0; padding-top: 1.8cqw; }
+.row { display: grid; gap: 1.4cqw; }
+
+.frame { position: relative; width: 100%; border-radius: 1.5cqw; }
+.cap {
+  position: absolute; left: 0; right: 0; bottom: 0;
+  padding: 1.9cqw 2.2cqw 1.7cqw;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 100%);
+  border-radius: 0 0 1.5cqw 1.5cqw; pointer-events: none;
+}
+.cap .lbl { font-family: "Space Mono", monospace; font-size: 2.0cqw; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 1cqw; }
+.cap .bd { font-size: 2.5cqw; font-weight: 300; line-height: 1.35; margin: 0; color: #eee; }
+.pill {
+  position: absolute; top: 1.5cqw; left: 1.5cqw; z-index: 2;
+  display: flex; align-items: center; gap: 0.8cqw;
+  background: rgba(0,0,0,0.55); padding: 0.7cqw 1.3cqw; border-radius: 4cqw;
+  font-family: "Space Mono", monospace; font-size: 1.6cqw; letter-spacing: 0.16em; text-transform: uppercase;
+}
+
+.textblock { }
+.textblock h3 { font-size: 7.5cqw; font-weight: 800; letter-spacing: -0.025em; text-transform: uppercase; line-height: 0.94; margin: 0; }
+.textblock p { font-size: 3.0cqw; font-weight: 300; line-height: 1.5; color: #d6d6d6; margin: 2.2cqw 0 0; }
+
+/* Chat card */
+.chat { display: flex; flex-direction: column; justify-content: center; gap: 1.1cqw; background: #0a0a0a; outline: 1px solid rgba(255,255,255,0.10); border-radius: 1.5cqw; padding: 2.6cqw 2.8cqw; }
+.chat .clbl { font-family: "Space Mono", monospace; font-size: 1.9cqw; letter-spacing: 0.18em; text-transform: uppercase; color: #8c8c8c; margin-bottom: 0.4cqw; }
+.bub { font-family: "Archivo", sans-serif; font-size: 2.3cqw; font-weight: 500; line-height: 1.3; padding: 1.3cqw 1.9cqw; max-width: 78%; }
+.bub.me { align-self: flex-end; background: #ededed; color: #0a0a0a; border-radius: 2.2cqw 2.2cqw 0.6cqw 2.2cqw; }
+.bub.her { align-self: flex-start; background: #1c1c1e; color: #fff; border-radius: 2.2cqw 2.2cqw 2.2cqw 0.6cqw; }
+.status { font-family: "Space Mono", monospace; font-size: 1.5cqw; letter-spacing: 0.14em; text-transform: uppercase; color: #5f5f5f; }
+.status.r { align-self: flex-end; }
+.status.l { align-self: flex-start; }
+.typing { align-self: flex-start; display: flex; gap: 0.7cqw; background: #1c1c1e; padding: 1.4cqw 2cqw; border-radius: 2.2cqw 2.2cqw 2.2cqw 0.6cqw; }
+.typing span { width: 1cqw; height: 1cqw; border-radius: 50%; background: #6a6a6a; }
+
+.foot { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.14); padding-top: 1.7cqw; margin-top: 1.8cqw; flex-shrink: 0; }
+.foot .brand { display: flex; align-items: center; gap: 1.2cqw; }
+.foot span, .foot .brand span { font-family: "Space Mono", monospace; font-size: 1.9cqw; letter-spacing: 0.24em; text-transform: uppercase; color: #8c8c8c; }
+.foot .mk { width: 5cqw; height: 3cqw; opacity: 0.8; }
+
+/* Cover */
+.cover-title { flex-shrink: 0; padding-top: 3.4cqw; padding-bottom: 2.8cqw; }
+.cover-eyebrow { font-family: "Space Mono", monospace; font-size: 2.1cqw; letter-spacing: 0.32em; text-transform: uppercase; color: #c4c4c4; margin-bottom: 1.6cqw; }
+.cover-h1 { font-size: 13.6cqw; font-weight: 800; line-height: 0.84; letter-spacing: -0.035em; text-transform: uppercase; margin: 0; }
+.cover-sub { font-size: 2.5cqw; font-weight: 300; line-height: 1.45; color: #b4b4b4; margin: 2.4cqw 0 0; }
+.cover-grid { flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 1.2cqw; align-content: center; min-height: 0; }
+.credits { flex-shrink: 0; display: flex; justify-content: space-between; align-items: center; gap: 3cqw; border-top: 1px solid rgba(255,255,255,0.14); padding-top: 2.2cqw; margin-top: 2.2cqw; }
+.credits .c { display: flex; flex-direction: column; gap: 0.7cqw; }
+.credits .ck { font-family: "Space Mono", monospace; font-size: 1.8cqw; letter-spacing: 0.22em; text-transform: uppercase; color: #9a9a9a; }
+.credits .cv { font-size: 2.6cqw; font-weight: 600; text-transform: uppercase; letter-spacing: 0.02em; }
+
+/* Final block */
+.final-head { font-size: 9.4cqw; font-weight: 800; letter-spacing: -0.03em; text-transform: uppercase; line-height: 0.9; margin: 0; }
+.final-body { font-size: 2.9cqw; font-weight: 300; line-height: 1.5; color: #cfcfcf; margin: 2.2cqw 0 0; }
+.final-meta { display: flex; align-items: flex-end; justify-content: space-between; gap: 3cqw; margin-top: 3cqw; }
+.final-contact { display: flex; gap: 5cqw; }
+.final-contact .c { display: flex; flex-direction: column; gap: 0.6cqw; }
+.final-contact .ck { font-family: "Space Mono", monospace; font-size: 1.6cqw; letter-spacing: 0.2em; text-transform: uppercase; color: #8c8c8c; }
+.final-contact .cv { font-family: "Space Mono", monospace; font-size: 2.0cqw; color: #fff; }
+.final-chat { flex-shrink: 0; display: flex; flex-direction: column; gap: 0.8cqw; background: #0a0a0a; border: 1px solid rgba(255,255,255,0.12); border-radius: 1.5cqw; padding: 1.8cqw 2cqw; max-width: 52%; }
+
+/* ImageSlot */
+.slot { position: absolute; inset: 0; width: 100%; height: 100%; overflow: hidden; border-radius: 1.5cqw; background: #0c0c0c; outline: 1px solid rgba(255,255,255,0.10); }
+.slot.over { outline: 2px solid #c96442; }
+.slot.editing { outline: 2px solid #c96442; cursor: grab; }
+.slot.editing.grabbing { cursor: grabbing; }
+.slot img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; user-select: none; -webkit-user-drag: none; }
+.slot .empty { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.2cqw; text-align: center; padding: 6%; color: rgba(255,255,255,0.5); cursor: pointer; }
+.slot .empty .ph { font-family: "Space Mono", monospace; font-size: 1.7cqw; letter-spacing: 0.14em; text-transform: uppercase; line-height: 1.5; }
+.slot .empty .br { font-size: 1.5cqw; opacity: 0.7; }
+.slot .ring { position: absolute; inset: 0; border: 1.5px dashed rgba(255,255,255,0.22); border-radius: 1.5cqw; pointer-events: none; }
+.slot .badge { position: absolute; top: 1.2cqw; right: 1.2cqw; z-index: 3; display: flex; gap: 0.8cqw; }
+.slot .badge button { font-family: "Space Mono", monospace; font-size: 1.4cqw; letter-spacing: 0.12em; text-transform: uppercase; background: rgba(0,0,0,0.65); color: #fff; border: 0; border-radius: 3px; padding: 0.7cqw 1.1cqw; cursor: pointer; backdrop-filter: blur(6px); }
+.slot .hint { position: absolute; top: 1.2cqw; left: 1.2cqw; z-index: 3; font-family: "Space Mono", monospace; font-size: 1.4cqw; letter-spacing: 0.12em; text-transform: uppercase; color: #fff; background: rgba(201,100,66,0.85); padding: 0.7cqw 1.1cqw; border-radius: 3px; }
