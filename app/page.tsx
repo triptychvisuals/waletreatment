@@ -109,11 +109,6 @@ const BLUE = "#cdd8e6",
 export default function Page() {
   return (
     <main className="app">
-      <div className="intro-bar">
-        <span>Wale — <b>Overthink</b> · Treatment</span>
-        <span>Drag photos / GIFs into any slot</span>
-      </div>
-
       {/* 01 — COVER */}
       <section className="slide">
         <div className="chrome">

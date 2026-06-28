@@ -10,20 +10,6 @@ body { font-family: "Archivo", system-ui, sans-serif; }
   padding: 28px 16px 80px;
   min-height: 100vh;
 }
-.intro-bar {
-  width: 100%;
-  max-width: 520px;
-  color: #8c8c8c;
-  font-family: "Space Mono", monospace;
-  font-size: 12px;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 12px;
-}
-.intro-bar b { color: #e8e8e8; font-weight: 400; }
 
 /* ── Slide shell (9:16, container-scaled type) ───────────────────────────── */
 .slide {
