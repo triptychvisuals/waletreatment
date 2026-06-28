@@ -72,7 +72,7 @@ function Frame({
   pillDot?: string;
   bubble?: string;
 }) {
-  const src = id === "rs_b1_venue" ? "/gifs/rs_b1_venue.png" : `/gifs/${id}.gif`;
+  const src = `/gifs/${id}.webp`;
   return (
     <div className="frame" style={{ aspectRatio: ar }}>
       <ImageSlot id={id} placeholder={ph} src={src} />
@@ -148,7 +148,7 @@ export default function Page() {
             Wale and the girl are never in the same shot. The story lives in the cut between his world and hers — and a text thread neither can finish.
           </h2>
         </div>
-        <div className="content">
+        <div className="content content-fit">
           <Frame id="rs_vl_soundcheck" ar="16/9" ph="Soundcheck ref" label="Soundcheck" labelColor={BLUE} pillDot={BLUEDOT} body="Empty venue. Intimate, stripped, bare. House lights. His inner world." />
           <Frame id="rs_vl_show" ar="16/9" ph="The full show, crowd" label="The Show" labelColor={WHITE} body="Full crowd, stage lights, peak energy. When soundcheck ends, the room fills — his outer world." />
           <Frame id="rs_vl_apartment" ar="16/9" ph="Apartment ref" label="Her Apartment" labelColor={WARM} body="Still, isolated, warm light. Alone. The other half of every cut." />

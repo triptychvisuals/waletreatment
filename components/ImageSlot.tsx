@@ -150,33 +150,14 @@ export default function ImageSlot({
             src={data.url}
             alt=""
             draggable={false}
+            loading="lazy"
+            decoding="async"
             style={{
               objectPosition: `${data.px}% ${data.py}%`,
               transform: `scale(${data.scale})`,
             }}
           />
           {editing && <div className="hint">Drag to move · scroll to zoom · dbl-click done</div>}
-          <div className="badge">
-            <button
-              onClick={(e) => {
-                e.stopPropagation();
-                inputRef.current?.click();
-              }}
-            >
-              Replace
-            </button>
-            <button
-              onClick={(e) => {
-                e.stopPropagation();
-                setEditing(false);
-                try { window.localStorage.removeItem(KEY(id)); } catch {}
-                if (src) setData({ url: src, px: 50, py: 50, scale: 1 });
-                else setData(null);
-              }}
-            >
-              Remove
-            </button>
-          </div>
         </>
       ) : (
         <>

@@ -46,15 +46,17 @@ body { font-family: "Archivo", system-ui, sans-serif; }
 .tag { display: flex; align-items: center; gap: 0.9cqw; font-family: "Space Mono", monospace; font-size: 1.85cqw; letter-spacing: 0.2em; text-transform: uppercase; white-space: nowrap; }
 .dot { width: 0.9cqw; height: 0.9cqw; border-radius: 50%; flex-shrink: 0; }
 
-.lead { flex-shrink: 0; padding-top: 2.6cqw; padding-bottom: 2.2cqw; }
+.lead { flex-shrink: 0; padding-top: 2.2cqw; padding-bottom: 1.8cqw; }
 .lead-eyebrow { font-family: "Space Mono", monospace; font-size: 2.0cqw; letter-spacing: 0.3em; text-transform: uppercase; color: #bdbdbd; margin-bottom: 1.6cqw; }
-.lead-head { font-size: 5.4cqw; font-weight: 800; letter-spacing: -0.02em; line-height: 1.02; margin: 0; text-wrap: balance; }
+.lead-head { font-size: 4.6cqw; font-weight: 800; letter-spacing: -0.02em; line-height: 1.04; margin: 0; text-wrap: balance; }
 .lead-intro { font-size: 2.5cqw; font-weight: 300; line-height: 1.45; color: #c4c4c4; margin: 0; }
 
 .content { flex: 1; display: flex; flex-direction: column; gap: 1.4cqw; justify-content: center; min-height: 0; padding-top: 1.8cqw; }
+/* When frames must share a tight column (e.g. the Concept slide), let them flex to fit instead of overflowing */
+.content-fit > .frame { flex: 1 1 0; min-height: 0; }
 .row { display: grid; gap: 1.4cqw; }
 
-.frame { position: relative; width: 100%; border-radius: 1.5cqw; }
+.frame { position: relative; width: 100%; min-height: 0; border-radius: 1.5cqw; }
 .cap {
   position: absolute; left: 0; right: 0; bottom: 0;
   padding: 1.9cqw 2.2cqw 1.7cqw;
@@ -122,6 +124,4 @@ body { font-family: "Archivo", system-ui, sans-serif; }
 .slot .empty .ph { font-family: "Space Mono", monospace; font-size: 1.7cqw; letter-spacing: 0.14em; text-transform: uppercase; line-height: 1.5; }
 .slot .empty .br { font-size: 1.5cqw; opacity: 0.7; }
 .slot .ring { position: absolute; inset: 0; border: 1.5px dashed rgba(255,255,255,0.22); border-radius: 1.5cqw; pointer-events: none; }
-.slot .badge { position: absolute; top: 1.2cqw; right: 1.2cqw; z-index: 3; display: flex; gap: 0.8cqw; }
-.slot .badge button { font-family: "Space Mono", monospace; font-size: 1.4cqw; letter-spacing: 0.12em; text-transform: uppercase; background: rgba(0,0,0,0.65); color: #fff; border: 0; border-radius: 3px; padding: 0.7cqw 1.1cqw; cursor: pointer; backdrop-filter: blur(6px); }
 .slot .hint { position: absolute; top: 1.2cqw; left: 1.2cqw; z-index: 3; font-family: "Space Mono", monospace; font-size: 1.4cqw; letter-spacing: 0.12em; text-transform: uppercase; color: #fff; background: rgba(201,100,66,0.85); padding: 0.7cqw 1.1cqw; border-radius: 3px; }

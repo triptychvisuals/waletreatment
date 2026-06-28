@@ -1,31 +1,156 @@
 {
   "project": "Wale — Overthink · Music Video Treatment",
-  "note": "Each slot id maps to one file in this folder. Drop the matching files here (public/gifs/). The app auto-loads /gifs/<id>.gif for every slot (rs_b1_venue is .png). Users can still drag-drop to override; overrides save to localStorage.",
+  "note": "Each slot id maps to one animated WebP in this folder (/gifs/<id>.webp). Converted from source GIFs for fast loading. Users can still drag-drop to override; overrides save to localStorage.",
   "slots": [
-    { "id": "rs_cover_hero", "file": "rs_cover_hero.gif", "slide": "01 Cover", "caption": "The Empty Venue" },
-    { "id": "rs_cover_key2", "file": "rs_cover_key2.gif", "slide": "01 Cover", "caption": "His Soundcheck" },
-    { "id": "rs_cover_key3", "file": "rs_cover_key3.gif", "slide": "01 Cover", "caption": "Her — Mirror, Makeup" },
-    { "id": "rs_cover_key4", "file": "rs_cover_key4.gif", "slide": "01 Cover", "caption": "The Show — Full Crowd" },
-    { "id": "rs_vl_soundcheck", "file": "rs_vl_soundcheck.gif", "slide": "02 Concept", "caption": "Soundcheck" },
-    { "id": "rs_vl_show", "file": "rs_vl_show.gif", "slide": "02 Concept", "caption": "The Show" },
-    { "id": "rs_vl_apartment", "file": "rs_vl_apartment.gif", "slide": "02 Concept", "caption": "Her Apartment" },
-    { "id": "rs_perf_1", "file": "rs_perf_1.gif", "slide": "03 Performance · Soundcheck", "caption": "Wide — Bare Stage" },
-    { "id": "rs_perf_2", "file": "rs_perf_2.gif", "slide": "03 Performance · Soundcheck", "caption": "Close — Mic In Hand" },
-    { "id": "rs_perf_3", "file": "rs_perf_3.gif", "slide": "03 Performance · Soundcheck", "caption": "Low Angle — Silhouette" },
-    { "id": "rs_perf_4", "file": "rs_perf_4.gif", "slide": "03 Performance · Soundcheck", "caption": "Behind Him — Empty Room" },
-    { "id": "rs_b1_venue", "file": "rs_b1_venue.png", "slide": "04 The Invitation", "caption": "01 · Soundcheck For No One" },
-    { "id": "rs_chair", "file": "rs_chair.gif", "slide": "04 The Invitation", "caption": "02 · The Reserved Sign" },
-    { "id": "rs_b2_gesture", "file": "rs_b2_gesture.gif", "slide": "04 The Invitation", "caption": "03 · He Sends The Invite" },
-    { "id": "rs_b4_apartment", "file": "rs_b4_apartment.gif", "slide": "05 Cut To Her", "caption": "04 · The Apartment" },
-    { "id": "rs_b5_ready", "file": "rs_b5_ready.gif", "slide": "05 Cut To Her", "caption": "05 · She Starts Getting Ready" },
-    { "id": "rs_b6_his", "file": "rs_b6_his.gif", "slide": "06 Two Rituals", "caption": "06 · His Ritual" },
-    { "id": "rs_b6_her", "file": "rs_b6_her.gif", "slide": "06 Two Rituals", "caption": "06 · Her Ritual" },
-    { "id": "rs_b7_venuefills", "file": "rs_b7_venuefills.gif", "slide": "06 Two Rituals", "caption": "08 · The Venue Fills" },
-    { "id": "rs_b8_stalls", "file": "rs_b8_stalls.gif", "slide": "07 The Wait", "caption": "10 · On The Way" },
-    { "id": "rs_b10_looking", "file": "rs_b10_looking.gif", "slide": "07 The Wait", "caption": "11 · Lost In The Song" },
-    { "id": "rs_b11_peak", "file": "rs_b11_peak.gif", "slide": "08 The Show", "caption": "11 · The Peak" },
-    { "id": "rs_b12_chair", "file": "rs_b12_chair.gif", "slide": "08 The Show", "caption": "12 · He Lets Go" },
-    { "id": "rs_b13_choice", "file": "rs_b13_choice.gif", "slide": "09 The Turnaround", "caption": "13 · She Changes Her Mind" },
-    { "id": "rs_b14_final", "file": "rs_b14_final.gif", "slide": "10 Final Image", "caption": "Final Image — She Arrives" }
+    {
+      "id": "rs_cover_hero",
+      "file": "rs_cover_hero.webp",
+      "slide": "01 Cover",
+      "caption": "The Empty Venue"
+    },
+    {
+      "id": "rs_cover_key2",
+      "file": "rs_cover_key2.webp",
+      "slide": "01 Cover",
+      "caption": "His Soundcheck"
+    },
+    {
+      "id": "rs_cover_key3",
+      "file": "rs_cover_key3.webp",
+      "slide": "01 Cover",
+      "caption": "Her — Mirror, Makeup"
+    },
+    {
+      "id": "rs_cover_key4",
+      "file": "rs_cover_key4.webp",
+      "slide": "01 Cover",
+      "caption": "The Show — Full Crowd"
+    },
+    {
+      "id": "rs_vl_soundcheck",
+      "file": "rs_vl_soundcheck.webp",
+      "slide": "02 Concept",
+      "caption": "Soundcheck"
+    },
+    {
+      "id": "rs_vl_show",
+      "file": "rs_vl_show.webp",
+      "slide": "02 Concept",
+      "caption": "The Show"
+    },
+    {
+      "id": "rs_vl_apartment",
+      "file": "rs_vl_apartment.webp",
+      "slide": "02 Concept",
+      "caption": "Her Apartment"
+    },
+    {
+      "id": "rs_perf_1",
+      "file": "rs_perf_1.webp",
+      "slide": "03 Performance · Soundcheck",
+      "caption": "Wide — Bare Stage"
+    },
+    {
+      "id": "rs_perf_2",
+      "file": "rs_perf_2.webp",
+      "slide": "03 Performance · Soundcheck",
+      "caption": "Close — Mic In Hand"
+    },
+    {
+      "id": "rs_perf_3",
+      "file": "rs_perf_3.webp",
+      "slide": "03 Performance · Soundcheck",
+      "caption": "Low Angle — Silhouette"
+    },
+    {
+      "id": "rs_perf_4",
+      "file": "rs_perf_4.webp",
+      "slide": "03 Performance · Soundcheck",
+      "caption": "Behind Him — Empty Room"
+    },
+    {
+      "id": "rs_b1_venue",
+      "file": "rs_b1_venue.webp",
+      "slide": "04 The Invitation",
+      "caption": "01 · Soundcheck For No One"
+    },
+    {
+      "id": "rs_chair",
+      "file": "rs_chair.webp",
+      "slide": "04 The Invitation",
+      "caption": "02 · The Reserved Sign"
+    },
+    {
+      "id": "rs_b2_gesture",
+      "file": "rs_b2_gesture.webp",
+      "slide": "04 The Invitation",
+      "caption": "03 · He Sends The Invite"
+    },
+    {
+      "id": "rs_b4_apartment",
+      "file": "rs_b4_apartment.webp",
+      "slide": "05 Cut To Her",
+      "caption": "04 · The Apartment"
+    },
+    {
+      "id": "rs_b5_ready",
+      "file": "rs_b5_ready.webp",
+      "slide": "05 Cut To Her",
+      "caption": "05 · She Starts Getting Ready"
+    },
+    {
+      "id": "rs_b6_his",
+      "file": "rs_b6_his.webp",
+      "slide": "06 Two Rituals",
+      "caption": "06 · His Ritual"
+    },
+    {
+      "id": "rs_b6_her",
+      "file": "rs_b6_her.webp",
+      "slide": "06 Two Rituals",
+      "caption": "06 · Her Ritual"
+    },
+    {
+      "id": "rs_b7_venuefills",
+      "file": "rs_b7_venuefills.webp",
+      "slide": "06 Two Rituals",
+      "caption": "08 · The Venue Fills"
+    },
+    {
+      "id": "rs_b8_stalls",
+      "file": "rs_b8_stalls.webp",
+      "slide": "07 The Wait",
+      "caption": "10 · On The Way"
+    },
+    {
+      "id": "rs_b10_looking",
+      "file": "rs_b10_looking.webp",
+      "slide": "07 The Wait",
+      "caption": "11 · Lost In The Song"
+    },
+    {
+      "id": "rs_b11_peak",
+      "file": "rs_b11_peak.webp",
+      "slide": "08 The Show",
+      "caption": "11 · The Peak"
+    },
+    {
+      "id": "rs_b12_chair",
+      "file": "rs_b12_chair.webp",
+      "slide": "08 The Show",
+      "caption": "12 · He Lets Go"
+    },
+    {
+      "id": "rs_b13_choice",
+      "file": "rs_b13_choice.webp",
+      "slide": "09 The Turnaround",
+      "caption": "13 · She Changes Her Mind"
+    },
+    {
+      "id": "rs_b14_final",
+      "file": "rs_b14_final.webp",
+      "slide": "10 Final Image",
+      "caption": "Final Image — She Arrives"
+    }
   ]
 }
